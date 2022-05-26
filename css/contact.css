@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  background: #F3FAFF;
+}
+
+body ::-webkit-input-placeholder {
+  font-family: 'Inter', sans-serif;
+  color: #878787;
+}
+
+body :-ms-input-placeholder {
+  font-family: 'Inter', sans-serif;
+  color: #878787;
+}
+
+body ::-ms-input-placeholder {
+  font-family: 'Inter', sans-serif;
+  color: #878787;
+}
+
+body ::placeholder {
+  font-family: 'Inter', sans-serif;
+  color: #878787;
+}
+
+body textarea {
+  resize: none;
+  background: #ededed;
+  border: none;
+  border-radius: 15px;
+  border: 1px solid #C4C4C4;
+  width: 15em;
+  height: 14em;
+  outline: none;
+  padding: 1em;
+  font-family: "Inter", sans-serif;
+}
+
+body form {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2em;
+  width: 35em;
+  -webkit-box-shadow: 0px 4px 10px 0px #00000040;
+          box-shadow: 0px 4px 10px 0px #00000040;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body form h1 {
+  color: #767676;
+  margin-bottom: 1.5em;
+}
+
+body form .form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body form .left-form div {
+  margin-bottom: 2em;
+}
+
+body form .right-form {
+  margin: 0 auto;
+}
+
+body form button {
+  margin: 0 auto;
+  padding: 0.8em;
+  background: #36ABFF;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  width: 18em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body form label {
+  font-size: 0.9em;
+  color: #767676;
+}
+
+body form input {
+  outline: none;
+  background: #ededed;
+  border: none;
+  border-radius: 15px;
+  padding: 0.8em;
+  width: 18em;
+  font-family: "Inter", sans-serif;
+  border: 1px solid #C4C4C4;
+}
+
+body .contact-title {
+  text-align: center;
+}
+
+body .contact-title div {
+  font-weight: 500;
+  color: #878787;
+  font-size: 1.2em;
+}
+
+body .contact-title h1 {
+  font-size: 2.2em;
+  color: #767676;
+}
+
+body .message {
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=contact.css.map */

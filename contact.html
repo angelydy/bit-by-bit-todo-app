@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/PHP - Simple To Do List App/css/contact.css">
+  <link rel="shortcut icon" href="/PHP - Simple To Do List App/images/b3logo.png">
+  <title>Contact</title>
+</head>
+<body>
+  <nav>
+
+  </nav>
+  <section class="contact-page">
+    <div class="contact-title">
+      <h1>Let's Get In Touch! 👋</h1>
+      <div>Got any questions? Contact us</div>
+    </div>
+    <form action="contact.php" method="post">
+      <h1>Contact Form</h1>
+      <div class="form-wrapper">
+        <div class="left-form">
+          <div class="elem-group">
+            <label for="name">Name</label>
+            <br>
+            <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+          </div>
+          <div class="elem-group">
+            <label for="email">Email</label>
+            <br>
+            <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+          </div>
+          <div class="elem-group">
+            <label for="department-selection">Subject</label>
+            <br>
+            <input type="text" name="visitor_subject" id="subject" placeholder="Forgot Password" required>
+          </div>
+          </div>
+          <div class="right-form">
+            <div class="elem-group">
+              <label for="message">Message</label>
+              <br>
+              <textarea id="message" name="visitor_message" required></textarea>
+            </div>
+          </div>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</body>
+</html>

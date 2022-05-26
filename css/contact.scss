@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  background: #F3FAFF;
+
+  ::placeholder {
+    font-family: 'Inter', sans-serif;
+    color: #878787;
+  }
+
+  textarea {
+    resize: none;
+    background: #ededed;
+    border: none;
+    border-radius: 15px;
+    border: 1px solid #C4C4C4;
+    width: 15em;
+    height: 14em;
+    outline: none;
+    padding: 1em;
+    font-family: "Inter", sans-serif;
+  }
+
+  form {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 2em;
+    width: 35em;
+    box-shadow: 0px 4px 10px 0px #00000040;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+      color: #767676;
+      margin-bottom: 1.5em;
+    }
+
+    .form-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .left-form {
+      div {
+        margin-bottom: 2em;
+      }
+    }
+
+    .right-form {
+      margin: 0 auto;
+    }
+
+    button {
+      margin: 0 auto;
+      padding: 0.8em;
+      background: #36ABFF;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      width: 18em;
+      display: flex;
+      justify-content: center;
+    }
+
+    label {
+      font-size: 0.9em;
+      color: #767676;
+    }
+
+    input {
+      outline: none;
+      background: #ededed;
+      border: none;
+      border-radius: 15px;
+      padding: 0.8em;
+      width: 18em;
+      font-family: "Inter", sans-serif;
+      border: 1px solid #C4C4C4
+    }
+  }
+
+  .contact-title {
+    text-align: center;
+
+    div {
+      font-weight: 500;
+      color: #878787;
+      font-size: 1.2em;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      color: #767676;
+    }
+  }
+
+  .message {
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
