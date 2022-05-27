@@ -30,10 +30,7 @@ body {
     width: 35em;
     box-shadow: 0px 4px 10px 0px #00000040;
     margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 3em;
 
     h1 {
       color: #767676;
@@ -56,7 +53,7 @@ body {
     }
 
     button {
-      margin: 0 auto;
+      margin: 1em auto;
       padding: 0.8em;
       background: #36ABFF;
       color: white;
@@ -106,5 +103,52 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 0.8em;
+  }
+
+  .contact-title {
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+
+  .message {
+    font-size: 0.8em;
+  }
+
+  form {
+    max-width: 80%;
+
+    h1 {
+      text-align: center;
+    }
+
+    button {
+      margin-top: 1em;
+    }
+  }
+
+  .form-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .left-form {
+    div {
+      margin-bottom: 1em;
+    }
+  }
+
+  .right-form {
+    margin: 0 auto;
+  }
+
+  input {
+    width: 100%;
   }
 }
