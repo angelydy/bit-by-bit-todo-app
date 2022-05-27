@@ -1,27 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #333;
   background: #F3FAFF;
 }
 
 body ::-webkit-input-placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #878787;
 }
 
 body :-ms-input-placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #878787;
 }
 
 body ::-ms-input-placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #878787;
 }
 
 body ::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #878787;
 }
 
@@ -31,11 +31,11 @@ body textarea {
   border: none;
   border-radius: 15px;
   border: 1px solid #C4C4C4;
-  width: 15em;
-  height: 14em;
+  width: 17em;
+  height: 16em;
   outline: none;
   padding: 1em;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body form {
@@ -52,6 +52,7 @@ body form {
 body form h1 {
   color: #767676;
   margin-bottom: 1.5em;
+  font-weight: 600;
 }
 
 body form .form-wrapper {
@@ -67,7 +68,7 @@ body form .left-form div {
 }
 
 body form .right-form {
-  margin: 0 auto;
+  margin-left: 2em;
 }
 
 body form button {
@@ -98,7 +99,7 @@ body form input {
   border-radius: 15px;
   padding: 0.8em;
   width: 18em;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   border: 1px solid #C4C4C4;
 }
 
@@ -109,12 +110,13 @@ body .contact-title {
 body .contact-title div {
   font-weight: 500;
   color: #878787;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
-body .contact-title h1 {
-  font-size: 2.2em;
+body .contact-title .greeting {
+  font-size: 2em;
   color: #767676;
+  font-weight: 600;
 }
 
 body .message {
@@ -127,40 +129,33 @@ body .message {
           transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   body {
-    font-size: 0.8em;
+    font-size: 0.9em;
+    margin-top: 2em;
   }
-  .contact-title h1 {
-    font-size: 1.5em;
-  }
-  .message {
-    font-size: 0.8em;
-  }
-  form {
+  body form {
     max-width: 80%;
   }
-  form h1 {
+  body form h1 {
     text-align: center;
   }
-  form button {
-    margin-top: 1em;
-  }
-  .form-wrapper {
+  body form .form-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .left-form div {
+  body form .left-form div {
     margin-bottom: 1em;
   }
-  .right-form {
-    margin: 0 auto;
+  body form .right-form {
+    margin-left: 0;
   }
-  input {
-    width: 100%;
+  body form button {
+    margin-top: 1em;
+    width: 90%;
   }
 }
 /*# sourceMappingURL=contact.css.map */

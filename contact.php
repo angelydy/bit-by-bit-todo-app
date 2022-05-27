@@ -38,8 +38,8 @@ if($_POST) {
     }
       
     $email_body .= "</div>";
-    $email_title = $visitor_subject . " from " . $visitor_name;
-
+    $email_title = $visitor_subject . ": Bitty Inquiry";
+ 
     $header = "From: " . $visitor_email . "\r\n";
     $header .= "Cc: " . $visitor_email . "\r\n";
     $header .= "MIME-Version: 1.0\r\n";
