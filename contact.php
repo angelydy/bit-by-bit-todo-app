@@ -36,25 +36,22 @@ if($_POST) {
                            <div>".$visitor_message."</div>
                         </div>";
     }
-
-    if(empty($visitor_subject)) {
-        echo "<script>alert('Please enter a subject.');</script>";
-    }
-    else {
-        $recipient = "angelymaedyy@gmail.com";
-    }
       
     $email_body .= "</div>";
- 
-    $headers  = 'MIME-Version: 1.0' . "\r\n"
-    .'Content-type: text/html; charset=utf-8' . "\r\n"
-    .'From: ' . $visitor_email . "\r\n";
+    $email_title = $visitor_subject . " from " . $visitor_name;
+
+    $header = "From: " . $visitor_email . "\r\n";
+    $header .= "Cc: " . $visitor_email . "\r\n";
+    $header .= "MIME-Version: 1.0\r\n";
+    $header .= "Content-type: text/html\r\n";
       
-    if(mail($recipient, $email_title, $email_body, $headers)) {      
-      echo "<script>window.open('submitForm.html', '_blank');</script>";
-      echo "<script>window.open('contact.html', '_self');</script>";
+    if(!empty($visitor_name) && !empty($visitor_email) && !empty($visitor_subject) && !empty($visitor_message)) {
+        mail('angelymaedyy@gmail.com', $email_title , $email_body, $header);
+        mail('prettylittlegirl368@gmail.com', $email_title , $email_body, $header);
+        echo "<script>window.open('submitForm.html', '_blank');</script>";
+        echo "<script>window.open('contact.html', '_self');</script>";
     } else {
-        echo "<script>alert('Something went wrong. Please try again.');</script>";
+        echo "<script>alert('Fill-out all the form and try again.');</script>";
         echo "<script>window.open('contact.html', '_self');</script>";
     }
       
