@@ -11,3 +11,14 @@ function displayFiveSec() {
   }, 1000);
 }
 displayFiveSec();
+
+var submit = document.getElementById("send");
+function submitForm() {
+  if (document.getElementById("name").value == "" || document.getElementById("email").value == "" || document.getElementById("message").value == "" || document.getElementById("subject").value == "") {
+    alert("Please fill in all fields");
+    return false;
+  } else {
+    window.open("https://todoapp.elementfx.com/submitForm.html", "_blank");
+  }
+}
+submit.addEventListener("click", submitForm);
