@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #333;
   background: #F3FAFF;
 
   ::placeholder {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #878787;
   }
 
@@ -16,11 +16,77 @@ body {
     border: none;
     border-radius: 15px;
     border: 1px solid #C4C4C4;
-    width: 17em;
-    height: 16em;
+    width: 15em;
+    height: 14em;
     outline: none;
     padding: 1em;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+      color: #00B4DB;
+      text-decoration: none;
+    }
+
+    .logo {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 4em;
+      }
+
+      p{
+        font-size: 1.5em;
+        color: #48B2FE;
+      }
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      width: 40%;
+    }
+
+    .active {
+      a {
+        color: #83CBFF;
+      }
+    }
+
+    .profile-section {
+      display: flex;
+      align-items: center;
+
+      div {
+        margin: 0 1em;
+      }
+
+      .dropdown {
+        width: 1em;
+      }
+
+      .darkmode {
+        width: 2em;
+      }
+
+      .profile {
+        width: 2.5em;
+      }
+
+      .profile-container {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+    }
   }
 
   form {
@@ -35,7 +101,6 @@ body {
     h1 {
       color: #767676;
       margin-bottom: 1.5em;
-      font-weight: 600;
     }
 
     .form-wrapper {
@@ -50,7 +115,7 @@ body {
     }
 
     .right-form {
-      margin-left: 2em;
+      margin: 0 auto;
     }
 
     button {
@@ -77,7 +142,7 @@ body {
       border-radius: 15px;
       padding: 0.8em;
       width: 18em;
-      font-family: "Poppins", sans-serif;
+      font-family: "Inter", sans-serif;
       border: 1px solid #C4C4C4
     }
   }
@@ -88,13 +153,12 @@ body {
     div {
       font-weight: 500;
       color: #878787;
-      font-size: 1.1em;
+      font-size: 1.2em;
     }
 
-    .greeting {
-      font-size: 2em;
+    h1 {
+      font-size: 2.2em;
       color: #767676;
-      font-weight: 600;
     }
   }
 
@@ -108,37 +172,49 @@ body {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   body {
-    font-size: 0.9em;
-    margin-top: 2em;
+    font-size: 0.8em;
+  }
 
-    form {
-      max-width: 80%;
-  
-      h1 {
-        text-align: center;
-      }
-      
-      .form-wrapper {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-    
-      .left-form {
-        div {
-          margin-bottom: 1em;
-        }
-      }
-    
-      .right-form {
-        margin-left: 0;
-      }
-  
-      button {
-        margin-top: 1em;
-        width: 90%;
-      }
+  .contact-title {
+    h1 {
+      font-size: 1.5em;
     }
+  }
+
+  .message {
+    font-size: 0.8em;
+  }
+
+  form {
+    max-width: 80%;
+
+    h1 {
+      text-align: center;
+    }
+
+    button {
+      margin-top: 1em;
+    }
+  }
+
+  .form-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .left-form {
+    div {
+      margin-bottom: 1em;
+    }
+  }
+
+  .right-form {
+    margin: 0 auto;
+  }
+
+  input {
+    width: 100%;
   }
 }

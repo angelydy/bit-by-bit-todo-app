@@ -4,15 +4,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/PHP - Simple To Do List App/css/contact.css">
-  <link rel="shortcut icon" href="/PHP - Simple To Do List App/images/b3logo.png">
-  <script src="/PHP - Simple To Do List App/index.js" defer></script>
+  <link rel="stylesheet" href="/css/contact.css">
+  <link rel="shortcut icon" href="/images/b3logo.png">
+  <script src="/index.js" defer></script>
   <title>Contact</title>
 </head>
 <body>
-  <nav>
+  <!--- NAVBAR STARTS HERE -->
+<nav>
+    <div class="logo">
+      <img src="/images/B.png" alt="" class="logo">
+      <p>itty</p>
+    </div>
 
+    <ul>
+      <li>home</li>
+      <li><a href="/todo.php">tasks</a></li>
+      <li>about</li>
+      <li class="active"><a href="/contact.html"><u>contact</u></a></li>
+    </ul>
+
+    <div class="profile-section">
+			<img src="/images/moon.png" alt="" class="darkmode">
+      <div class="profile-container">
+        <img src="/images/prof.png" alt="" class="profile">
+        <img src="/images/dropdown.png" alt="" class="dropdown">
+      </div>
+    </div>
   </nav>
+    <!--- NAVBAR ENDS HERE -->
   <section class="contact-page">
     <div class="contact-title">
       <h1>Let's Get In Touch! 👋</h1>
@@ -25,17 +45,17 @@
           <div class="elem-group">
             <label for="name">Name</label>
             <br>
-            <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+            <input type="text" id="name" name="visitor_name" pattern=[A-Z\sa-z]{3,20} required>
           </div>
           <div class="elem-group">
             <label for="email">Email</label>
             <br>
-            <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+            <input type="email" id="email" name="visitor_email" required>
           </div>
           <div class="elem-group">
             <label for="department-selection">Subject</label>
             <br>
-            <input type="text" name="visitor_subject" id="subject" placeholder="Forgot Password" required>
+            <input type="text" name="visitor_subject" id="subject" required>
           </div>
           </div>
           <div class="right-form">

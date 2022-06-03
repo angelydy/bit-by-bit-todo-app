@@ -1,27 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #333;
   background: #F3FAFF;
 }
 
 body ::-webkit-input-placeholder {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #878787;
 }
 
 body :-ms-input-placeholder {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #878787;
 }
 
 body ::-ms-input-placeholder {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #878787;
 }
 
 body ::placeholder {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #878787;
 }
 
@@ -31,12 +31,104 @@ body textarea {
   border: none;
   border-radius: 15px;
   border: 1px solid #C4C4C4;
-  width: 17em;
-  height: 16em;
+  width: 15em;
+  height: 14em;
   outline: none;
   padding: 1em;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
 }
+
+
+/* NAVBAR STYLES STARTS HERE */
+body nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body nav a {
+  color: #00B4DB;
+  text-decoration: none;
+}
+
+body nav .logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body nav .logo img {
+  width: 4em;
+}
+
+body nav .logo p {
+  font-size: 1.5em;
+  color: #48B2FE;
+}
+
+body nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 40%;
+}
+
+body nav .active a {
+  color: #83CBFF;
+}
+
+body nav .profile-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body nav .profile-section div {
+  margin: 0 1em;
+}
+
+body nav .profile-section .dropdown {
+  width: 1em;
+}
+
+body nav .profile-section .darkmode {
+  width: 2em;
+}
+
+body nav .profile-section .profile {
+  width: 2.5em;
+}
+
+body nav .profile-section .profile-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* NAVBAR STYLES ENDS HERE */
+
 
 body form {
   background: #ffffff;
@@ -52,7 +144,6 @@ body form {
 body form h1 {
   color: #767676;
   margin-bottom: 1.5em;
-  font-weight: 600;
 }
 
 body form .form-wrapper {
@@ -68,7 +159,7 @@ body form .left-form div {
 }
 
 body form .right-form {
-  margin-left: 2em;
+  margin: 0 auto;
 }
 
 body form button {
@@ -99,7 +190,7 @@ body form input {
   border-radius: 15px;
   padding: 0.8em;
   width: 18em;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   border: 1px solid #C4C4C4;
 }
 
@@ -110,13 +201,12 @@ body .contact-title {
 body .contact-title div {
   font-weight: 500;
   color: #878787;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
-body .contact-title .greeting {
-  font-size: 2em;
+body .contact-title h1 {
+  font-size: 2.2em;
   color: #767676;
-  font-weight: 600;
 }
 
 body .message {
@@ -129,33 +219,40 @@ body .message {
           transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   body {
-    font-size: 0.9em;
-    margin-top: 2em;
+    font-size: 0.8em;
   }
-  body form {
+  .contact-title h1 {
+    font-size: 1.5em;
+  }
+  .message {
+    font-size: 0.8em;
+  }
+  form {
     max-width: 80%;
   }
-  body form h1 {
+  form h1 {
     text-align: center;
   }
-  body form .form-wrapper {
+  form button {
+    margin-top: 1em;
+  }
+  .form-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  body form .left-form div {
+  .left-form div {
     margin-bottom: 1em;
   }
-  body form .right-form {
-    margin-left: 0;
+  .right-form {
+    margin: 0 auto;
   }
-  body form button {
-    margin-top: 1em;
-    width: 90%;
+  input {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=contact.css.map */
