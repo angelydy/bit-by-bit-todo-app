@@ -6,14 +6,43 @@
           <meta charset="UTF-8">
           <title>Login</title>
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-          <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+          <link rel="stylesheet" href="/css/logstyle.css?v=<?php echo time(); ?>">
+  		  <link rel="shortcut icon" href="/images/b3logo.png"/>
+          <script src="/index.js" defer></script>
 </head>
 
 <body>
+        <nav>
+            <div class="logo">
+            <img src="/images/B.png" alt="" class="logo">
+            <p>itty</p>
+            </div>
+
+            <ul>
+            <li>home</li>
+			<li><a href="/todo.php">tasks</a></li>
+            <li><a href="/About Us/HTML/AboutUs.html">about</a></li>
+            <li><a href="/contact.html">contact</a></li>
+            </ul>
+
+            <div class="profile-section">
+                    <img src="/images/moon.png" alt="" class="darkmode">
+            <div class="profile-container">
+                <img src="/images/prof.png" alt="" class="profile">
+                <img src="/images/dropdown.png" alt="" class="dropdown">
+                <div id="user-login">
+                    <p><a href="/login-user.php">login</a></p>
+                    <p><a  href="/signup-user.php">sign up</a></p>
+                </div>
+            </div>
+            </div>
+        </nav>
+
           <section class="container" id="container">
                     <div class="row">
-                              <div class="col-md-4 offset-md-4 form login-form">
+                              <div class="form login-form">
                                         <form action="login-user.php" method="POST" autocomplete="">
+                                                  <img src="/images/Vector.png" class="login-icon">
                                                   <h2 class="h2-text">Login</h2>
                                                   <p class="p-text">Save your progress by logging in</p>
                                                   <?php
@@ -44,13 +73,28 @@
                                                   <div class="form-group">
                                                             <input class="form-control button" type="submit"
                                                                       name="login" value="Login">
+                                                 		
                                                   </div>
                                                   <div class="link login-link p1-text">Not yet a member? <a
                                                                       href="signup-user.php">Create an Account</a></div>
                                         </form>
 
-                              </div>
+                            </div>
+                            <div class="image">
+                                            <img src="images\list.png" alt="">
+                                            <h1 class="h1-text"> Bitty </h1>
+                            </div>
+    
+        </section>
+
+        <section class="footer">
+          
+                    <div class="copy"> Copyright&copy;2022 All rights reserved.
+                              <span>Bitty</span>
                     </div>
+          
+          </section>
+                        
 
 </body>
 

@@ -1,0 +1,529 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    outline: none;
+    border: none;
+    transition: .2s linear;
+}
+
+body {
+    height: 100vh;
+}
+
+body nav .profile-section .darkmode:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+body nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+  }
+  
+  body nav a {
+    color: #00B4DB;
+    text-decoration: none;
+  }
+  
+  body nav .logo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  body nav .logo img {
+    width: 4em;
+  }
+  
+  body nav .logo p {
+    font-size: 1.5em;
+    color: #48B2FE;
+  }
+  
+  body nav ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 40%;
+  }
+  
+  body nav .active a {
+    color: #83CBFF;
+  }
+  
+  body nav .profile-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  body nav .profile-section #user-login {
+    display: none;
+    background: #E4E4E4;
+    border-radius: 10px;
+    color: #A3A3A3;
+    text-align: center;
+    width: 6em;
+    cursor: pointer;
+    position: absolute;
+    top: 5em;
+    right: 6em;
+  }
+  
+  body nav .profile-section #user-login a {
+    color: #A3A3A3;
+  }
+  
+  body nav .profile-section #user-login a:hover {
+    color: #00B4DB;
+  }
+  
+  body nav .profile-section div {
+    margin: 0 1em;
+  }
+  
+  body nav .profile-section .dropdown {
+    width: 1em;
+    cursor: pointer;
+  }
+  
+  body nav .profile-section .darkmode {
+    width: 2em;
+  }
+  
+  body nav .profile-section .profile {
+    width: 2.5em;
+  }
+  
+  body nav .profile-section .profile-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+html {
+    background: #F3FAFF;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+/*About Us*/
+
+.about{
+    padding: 30px;
+}
+
+.header-content
+{
+    margin-bottom: 50px;
+    text-align: center;
+    position: center;
+}
+
+.header-content h1
+{
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 66.56px;
+    color: #48B2FE;
+}
+
+.header-content p
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 30.26px;
+    position: relative;
+    color: #878787;
+}
+
+.centerImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    margin-top: 50px;
+}
+
+/*Team*/
+
+.team
+{
+    padding: 70px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+}
+
+.team-header h1
+{
+    margin-top: 50px;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 66.56px;
+    color: #48B2FE; 
+}
+
+.team-header p
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 30.26px;
+    position: relative;
+    color: #878787;
+    margin-bottom: 40px;
+}
+
+.team .center
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-content{
+    padding: 30px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.angely
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    margin-top: 10%;
+    margin-right: 85px;
+}
+
+
+.angelyName
+{
+    text-align: right;
+    font-family: 'Poppins';
+    color: #41a594;
+}
+
+.angelyName h1
+{
+    margin-top: 10%;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 60.51px;
+}
+
+.angelyName h3
+{
+    position: relative;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 10px; 
+}
+
+.angelyName h4
+{
+
+    font-weight: 400;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    color: #585858;
+    font-weight: 600;
+}
+
+.angelyName p
+{
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #585858;  
+}
+
+/*Sophia*/
+.sophia
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    margin-top: 20%;
+    margin-left: 85px;
+}
+
+.sophiaName
+{
+    text-align: left;
+    font-family: 'Poppins';
+    color: #41a594;
+}
+
+.sophiaName h1
+{  
+    margin-top: 20%;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 60.51px;
+}
+
+.sophiaName h3
+{
+    position: relative;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 10px;   
+}
+
+.sophiaName h4
+{
+
+    font-weight: 400;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    color: #585858;
+    font-weight: 600;
+}
+
+.sophiaName p
+{
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #585858;  
+}
+
+/*Jewel*/
+
+.jewel
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    margin-top: 20%;
+    margin-right: 85px;
+}
+
+.jewelName
+{
+    text-align: right;
+    font-family: 'Poppins';
+    color: #41a594;
+}
+
+.jewelName h1
+{
+    margin-top: 20%;
+    font-weight: 700;
+        font-size: 30px;
+        line-height: 60.51px;
+}
+
+.jewelName h3
+{
+    position: relative;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 10px;
+}
+
+.jewelName h4
+{
+
+    font-weight: 400;
+        font-style: italic;
+        font-size: 22px;
+        line-height: 25px;
+        margin-bottom: 10px;
+        color: #585858;
+        font-weight: 600;
+}
+
+.jewelName p
+{
+    font-weight: 300;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #585858;
+}
+
+/*Prince*/
+.prince
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    margin-top: 20%;
+    margin-left: 85px;
+}
+
+.princeName
+{
+    text-align: left;
+    font-family: 'Poppins';
+    color: #41a594;
+}
+
+.princeName h1
+{
+    margin-top: 20%;
+    font-weight: 700;
+        font-size: 30px;
+        line-height: 60.51px;
+}
+
+.princeName h3
+{
+    position: relative;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 10px;
+}
+
+.princeName h4
+{
+
+    font-weight: 400;
+        font-style: italic;
+        font-size: 22px;
+        line-height: 25px;
+        margin-bottom: 10px;
+        color: #585858;
+        font-weight: 600;
+}
+
+.princeName p
+{
+    font-weight: 300;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #585858;
+}
+
+
+/*Footer*/
+
+.footer .copy {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 1.5 1.1 5%;
+    color: #333;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+    padding-bottom: 9rem;
+}
+
+.footer .copy span {
+    color: #00B4DB;
+}
+
+
+
+
+/*Responsive*/
+
+@media only screen and (max-width: 600px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    body , .team{
+        padding: 10pxpx;
+    }
+    .header-content h1 {
+        font-size: 30px;
+    }
+    .header-content p{
+        font-size: 15px;
+    }
+    .team-header h1{
+        font-size: 30px;
+    }
+    .team-header p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px), (max-width: 900px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    table,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    th{
+        height: 5px;
+    }
+
+    .team{
+        text-align: center;
+    }
+
+    .angelyName h1, .sophiaName h1, .jewelName h1, .princeName h1{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .angelyName h3, .sophiaName h3, .jewelName h3, .princeName h3{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .angelyName h4, .sophiaName h4, .jewelName h4, .princeName h4{
+        font-size: 17px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .angelyName p, .sophiaName p, .jewelName p, .princeName p{
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .angely , .sophia , .jewel ,  .prince{
+        display: none;
+    }
+}

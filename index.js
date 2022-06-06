@@ -12,6 +12,36 @@ function displayFiveSec() {
 }
 displayFiveSec();
 
+var darkModeBtn = document.querySelector(".darkmode");
+function darkMode() {
+  //create darkmode and store in local storage
+  if (localStorage.getItem("darkmode") === null) {
+    localStorage.setItem("darkmode", "enabled");
+  }
+  //check if darkmode is enabled
+  if (localStorage.getItem("darkmode") == "enabled") {
+    document.body.style.backgroundColor = "#00111D";
+    localStorage.setItem("darkmode", "disabled");
+  }
+  //check if darkmode is disabled
+  else if (localStorage.getItem("darkmode") == "disabled") {
+    document.body.style.backgroundColor = "#F3FAFF";
+    localStorage.setItem("darkmode", "enabled");
+  }
+}
+darkModeBtn.addEventListener("click", darkMode);
+
+var dropdown = document.querySelector(".dropdown");
+var dropdownContent = document.getElementById("user-login");
+function dropdownMenu() {
+  if (dropdownContent.style.display == "none") {
+    dropdownContent.style.display = "block";
+  } else {
+    dropdownContent.style.display = "none";
+  }
+}
+dropdown.addEventListener("click", dropdownMenu);
+
 var submit = document.getElementById("send");
 function submitForm() {
   if (document.getElementById("name").value == "" || document.getElementById("email").value == "" || document.getElementById("message").value == "" || document.getElementById("subject").value == "") {

@@ -1,13 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<link rel="stylesheet" href="css/bootstrap.css"/>
 		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="shortcut icon" href="/"/>
-    <title>ToDo App | Finals</title>
+    <script src="/index.js" defer></script>
+    <title>ToDo</title>
 		<style>
+          @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 			body {
 				background: #F3FAFF;
+              	font-family: "Poppins", sans-serif;
 			}
 			
 			.col-md-6{
@@ -31,13 +35,15 @@
           nav a {
       	color: #00B4DB;
       	text-decoration: none;
+            margin: 0;
     	}
 
 			nav {
 				display: flex;
 				justify-content: space-around;
-              font-size: 1.25em;
-              margin: 1em auto;
+              font-size: 1.15em;
+              margin: 1.3em auto;
+              align-items: center;
 			}
 
     	nav .logo {
@@ -51,6 +57,7 @@
       }
 
       nav .logo p{
+        margin: 0;
         font-size: 1.5em;
         color: #48B2FE;
       }
@@ -74,6 +81,44 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+          
+          body nav .profile-section .darkmode:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+          
+body nav .profile-section #user-login {
+  display: none;
+  background: #E4E4E4;
+  border-radius: 10px;
+  color: #A3A3A3;
+  text-align: center;
+  width: 6em;
+  cursor: pointer;
+  position: absolute;
+  top: 5em;
+  right: 6em;
+}
+
+body nav .profile-section #user-login a {
+  color: #A3A3A3;
+}
+
+body nav .profile-section #user-login a:hover {
+  color: #00B4DB;
+}
+
+body nav .profile-section div {
+  margin: 0 1em;
+}
+
+body nav .profile-section .dropdown {
+  width: 1em;
+  cursor: pointer;
 }
 
 body nav .profile-section div {
@@ -104,6 +149,7 @@ body nav .profile-section .profile-container {
           justify-content: center;
 }
 
+
 		</style>
 	</head>
 <body>
@@ -116,7 +162,7 @@ body nav .profile-section .profile-container {
     <ul>
       <li>home</li>
       <li class="active"><a href="/todo.php"><u>tasks</u></a></li>
-      <li>about</li>
+      <li><a href="/About Us/HTML/AboutUs.html">about</a></li>
       <li><a href="/contact.html">contact</a></li>
     </ul>
 
@@ -125,6 +171,10 @@ body nav .profile-section .profile-container {
       <div class="profile-container">
         <img src="/images/prof.png" alt="" class="profile">
         <img src="/images/dropdown.png" alt="" class="dropdown">
+        <div id="user-login">
+          <p><a href="/login-user.php">login</a></p>
+          <p><a  href="/signup-user.php">sign up</a></p>
+        </div>
       </div>
     </div>
   </nav>

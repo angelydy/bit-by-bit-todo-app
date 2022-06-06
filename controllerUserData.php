@@ -28,8 +28,8 @@ if (isset($_POST['signup'])) {
         $data_check = mysqli_query($con, $insert_data);
         if ($data_check) {
             $subject = "Email Verification Code";
-            $message = "Your verification code is $code";
-            $sender = "From: precios.mabunga@gmail.com";
+            $message = "Hello! \n$name, \nWe're happy you signed up for Bitty! \nTo completely create your account, please use the code for verification. \nThank you! \n\nYour verification code is: \n$code";
+            $sender = "From: itecbitty@gmail.com";
             if (mail($email, $subject, $message, $sender)) {
                 $info = "We've sent a verification code to your email - $email";
                 $_SESSION['info'] = $info;
@@ -87,7 +87,7 @@ if (isset($_POST['login'])) {
             if ($status == 'verified') {
                 $_SESSION['email'] = $email;
                 $_SESSION['password'] = $password;
-                header('location: home.php');
+                header('location: home.php'); //homepage
             } else {
                 $info = "It's look like you haven't still verify your email - $email";
                 $_SESSION['info'] = $info;
@@ -97,7 +97,7 @@ if (isset($_POST['login'])) {
             $errors['email'] = "Incorrect email or password!";
         }
     } else {
-        $errors['email'] = "It's look like you're not yet a member! Click on the bottom link to signup.";
+        $errors['email'] = "It looks like you're not yet a member! Click on the bottom link to signup.";
     }
 }
 
@@ -112,8 +112,8 @@ if (isset($_POST['check-email'])) {
         $run_query =  mysqli_query($con, $insert_code);
         if ($run_query) {
             $subject = "Password Reset Code";
-            $message = "Your password reset code is $code";
-            $sender = "From: shahiprem7890@gmail.com";
+            $message = "Your password reset code is: $code";
+            $sender = "From: precios.mabunga@gmail.com";
             if (mail($email, $subject, $message, $sender)) {
                 $info = "We've sent a password reset otp to your email - $email";
                 $_SESSION['info'] = $info;

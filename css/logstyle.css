@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+body {
+  	font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: #F3FAFF;
+}
+
+body nav .profile-section .darkmode:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a {
+    color: #00B4DB;
+    text-decoration: none;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	font-size: 1em;
+    align-items: center;
+  	padding: 1em;
+}
+
+    	nav .logo {
+      	align-items: center;
+      	display: flex;
+      	justify-content: center;
+			}
+
+      nav .logo img {
+        width: 4em;
+      }
+
+      nav .logo p{
+        font-size: 1.5em;
+        color: #48B2FE;
+        margin: 0;
+      }
+
+    	nav ul {
+      	list-style: none;
+      	display: flex;
+      	justify-content: space-around;
+        align-items: center;
+      	width: 40%;
+        margin: 0;
+    	}
+
+    	nav .active a {
+        color: #83CBFF;
+    }
+          
+          body nav .profile-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+          
+body nav .profile-section #user-login {
+  display: none;
+  background: #E4E4E4;
+  border-radius: 10px;
+  color: #A3A3A3;
+  text-align: center;
+  width: 6em;
+  cursor: pointer;
+  position: absolute;
+  top: 5em;
+  right: 6em;
+}
+
+body nav .profile-section #user-login a {
+  color: #A3A3A3;
+}
+
+body nav .profile-section #user-login a:hover {
+  color: #00B4DB;
+}
+
+body nav .profile-section div {
+  margin: 0 1em;
+}
+
+body nav .profile-section .dropdown {
+  width: 1em;
+  cursor: pointer;
+}
+
+body nav .profile-section div {
+  margin: 0 1em;
+}
+
+body nav .profile-section .dropdown {
+  width: 1em;
+}
+
+body nav .profile-section .darkmode {
+  width: 2em;
+}
+
+body nav .profile-section .profile {
+  width: 2.5em;
+}
+
+body nav .profile-section .profile-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html {
+    background: #F3FAFF;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+::selection{
+    color: #fff;
+    background: #F3FAFF;
+}
+.container{
+    padding: 2rem 5%;
+}
+.container .row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    align-items: center;
+    margin: 20px;
+}
+.container .image{
+    flex: 1 1 30rem;
+    background: transparent;
+    padding: 50px 50px;
+    max-width: 400px;
+}
+.container .row .image img {
+    width: 100%;
+    max-width: 300px;
+    
+}
+.container .row .image .h1-text {
+    color: #36ABFF;
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: 50px;
+    text-align: center;
+}
+.container .form {
+    flex: 1 1 30rem;
+    background: #fff;
+    padding: 50px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(133, 133, 133, 0.2), 0 6px 20px 0 rgba(136, 136, 136, 0.19);
+    max-width: 450px;
+    max-height: auto;
+}
+.container .row form .form-control {
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    width: 100%;
+}
+.container .form form .form-control{
+    font-size: 13px;
+    border-radius: 50px;
+}
+.container .form form .login-icon {
+    width: 100%;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    max-width: 18px;
+    max-height: 24px;
+    text-align: left;
+}
+.container .form form .h2-text {
+    color: #767676;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 4px;
+    margin-bottom: 1.8px;
+    font-size: 25px;
+    text-align: left;
+}
+
+.container .form form .h2-text1 {
+    color: #767676;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 4px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    text-align: left;
+}
+.container .form form .p-text {
+    color: #767676;
+    margin-left: 5px;
+    font-size: 11px;
+    text-align: left;
+}
+.container .form form .p1-text {
+    font-weight: 500;
+    color: #767676;
+    margin: 1.8px;
+    font-size: 12px;
+    text-align: center;
+}
+.container .form form .forget-pass{
+    font-weight: 500;
+    text-align: right;
+    margin: -10px 0 10px 0;
+}
+.container .form form .forget-pass a{
+    font-size: 12px;
+}
+.container .form form .button{
+    background: #36ABFF;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.container .form form .button:hover{
+    background: #3acde0;
+}
+.container .form form .link{
+    padding: 5px 0;
+}
+.container .form form .link a{
+    color: #48B2FE;
+}
+.container .login-form form p{
+    font-size: 12px;
+}
+.container .row .alert{
+    font-size: 12px;
+}
+
+body ::-webkit-input-placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: #878787;
+}
+
+body :-ms-input-placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: #878787;
+}
+
+body ::-ms-input-placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: #878787;
+}
+
+body ::placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: #878787;
+}
+
+body textarea {
+    resize: none;
+    background: #ededed;
+    border: none;
+    border-radius: 15px;
+    border: 1px solid #C4C4C4;
+    width: 15em;
+    height: 14em;
+    outline: none;
+    padding: 1em;
+    font-family: "Poppins", sans-serif;
+}
+/* media queries  */
+@media (max-width:991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 5rem;
+    }
+
+}
+
+.footer .copy {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 1.5 1.1 5%;
+    color: #333;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+    padding-bottom: 9rem;
+}
+
+.footer .copy span {
+    color: #00B4DB;
+}

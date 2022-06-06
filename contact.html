@@ -10,7 +10,6 @@
   <title>Contact</title>
 </head>
 <body>
-  <!--- NAVBAR STARTS HERE -->
 <nav>
     <div class="logo">
       <img src="/images/B.png" alt="" class="logo">
@@ -20,7 +19,7 @@
     <ul>
       <li>home</li>
       <li><a href="/todo.php">tasks</a></li>
-      <li>about</li>
+      <li><a href="/About Us/HTML/AboutUs.html">about</a></li>
       <li class="active"><a href="/contact.html"><u>contact</u></a></li>
     </ul>
 
@@ -29,10 +28,14 @@
       <div class="profile-container">
         <img src="/images/prof.png" alt="" class="profile">
         <img src="/images/dropdown.png" alt="" class="dropdown">
+        <div id="user-login">
+          <p><a href="/login-user.php">login</a></p>
+          <p><a  href="/signup-user.php">sign up</a></p>
+        </div>
       </div>
     </div>
   </nav>
-    <!--- NAVBAR ENDS HERE -->
+  
   <section class="contact-page">
     <div class="contact-title">
       <h1>Let's Get In Touch! 👋</h1>
@@ -69,6 +72,10 @@
       <button type="submit" id="send">Send Message</button>
     </form>
   </section>
-
+  <section class="footer">     
+    <div class="copy"> Copyright&copy;2022 All rights reserved.
+      <span>Bitty</span>
+    </div>
+</section>
 </body>
 </html>

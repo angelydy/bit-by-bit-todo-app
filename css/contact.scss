@@ -28,6 +28,7 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
 
     a {
       color: #00B4DB;
@@ -66,12 +67,34 @@ body {
       display: flex;
       align-items: center;
 
+      #user-login {
+        display: none;
+        background: #E4E4E4;
+        border-radius: 10px;
+        color: #A3A3A3;
+        text-align: center;
+        width: 6em;
+        cursor: pointer;
+        position: absolute;
+        top: 5em;
+        right: 6em;
+
+        a {
+          color: #A3A3A3;
+
+          &:hover {
+            color: #00B4DB;
+          }
+        }
+      }
+
       div {
         margin: 0 1em;
       }
 
       .dropdown {
         width: 1em;
+        cursor: pointer;
       }
 
       .darkmode {
@@ -172,6 +195,24 @@ body {
     transform: translate(-50%, -50%);
   }
 }
+
+footer {
+  .copy {
+    text-align: center;
+  	padding: 1.5rem;
+  	margin-top: 1.5rem;
+  	padding-top: 2.5rem;
+  	font-size: 1.5 1.1 5%;
+  	color: #333;
+  	border-top: .1rem solid rgba(0, 0, 0, .1);
+  	padding-bottom: 9rem;
+
+  span {
+    color: #00B4DB;
+  	}
+  }
+}
+
 
 @media screen and (max-width: 800px) {
   body {

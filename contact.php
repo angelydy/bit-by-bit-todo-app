@@ -47,11 +47,10 @@ if($_POST) {
       
     if(!empty($visitor_name) && !empty($visitor_email) && !empty($visitor_subject) && !empty($visitor_message)) {
         mail('angelymaedyy@gmail.com', $email_title , $email_body, $header);
-        mail('precios.mabunga@gmail.com', $email_title , $email_body, $header);
+      	mail('precios.mabunga@gmail.com', $email_title , $email_body, $header);
       	mail('sophiaguchi7@gmail.com', $email_title , $email_body, $header);
       	mail('princesimons74@gmail.com', $email_title , $email_body, $header);
-        echo "<script>window.open('submitForm.html', '_blank');</script>";
-        echo "<script>window.open('contact.html', '_self');</script>";
+      	echo "<script>window.open('contact.html', '_self');</script>";
     } else {
         echo "<script>alert('Fill-out all the form and try again.');</script>";
         echo "<script>window.open('contact.html', '_self');</script>";

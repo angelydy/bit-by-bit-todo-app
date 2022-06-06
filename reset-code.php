@@ -10,16 +10,41 @@ if ($email == false) {
 
 <head>
           <meta charset="UTF-8">
-          <title>Code Verification</title>
+          <title>Login</title>
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-          <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+          <link rel="stylesheet" href="css/logstyle.css?v=<?php echo time(); ?>">
+      <link rel="shortcut icon" href="/images/b3logo.png"/>
+    <script src="/index.js"></script>
 </head>
 
 <body>
+        <nav>
+            <div class="logo">
+            <img src="/images/B.png" alt="" class="logo">
+            <p>itty</p>
+            </div>
+
+            <ul>
+            <li>home</li>
+            <li><a href="/todo.php">tasks</a></li>
+            <li><a href="/About Us/HTML/AboutUs.html">about</a></li>
+            <li><a href="/contact.html"><u>contact</u></a></li>
+            </ul>
+
+            <div class="profile-section">
+                    <img src="/images/moon.png" alt="" class="darkmode">
+            <div class="profile-container">
+                <img src="/images/prof.png" alt="" class="profile">
+                <img src="/images/dropdown.png" alt="" class="dropdown">
+            </div>
+            </div>
+        </nav>
+
           <div class="container">
                     <div class="row">
-                              <div class="col-md-4 offset-md-4 form">
+                              <div class="form">
                                         <form action="reset-code.php" method="POST" autocomplete="off">
+                                                  <img src="images/Vector.png" class="login-icon">
                                                   <h2 class="h2-text">Code Verification</h2>
                                                   <p class="p-text">Code sent to your email</h2>
                                                             <?php
@@ -55,8 +80,21 @@ if ($email == false) {
                                                   </div>
                                         </form>
                               </div>
+
+                              <div class="image">
+                                            <img src="images\list.png" alt="">
+                                            <h1 class="h1-text"> Bitty </h1>
+                            </div>
                     </div>
           </div>
+
+          <section class="footer">
+          
+                    <div class="copy"> Copyright&copy;2022 All rights reserved.
+                              <span>Bitty</span>
+                    </div>
+          
+          </section>
 
 </body>
 
