@@ -14,6 +14,12 @@ displayFiveSec();
 
 var darkModeBtn = document.querySelector(".darkmode");
 var blacks = document.getElementById("white-text")
+
+const enableDarkMode = () => {
+  document.body.style.backgroundColor = "#F3FAFF";
+  blacks.style.color = "black";
+}
+
 function darkMode() {
   //create darkmode and store in local storage
   if (localStorage.getItem("darkmode") === null) {
