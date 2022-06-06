@@ -1,36 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #333;
   background: #F3FAFF;
 }
 
 body ::-webkit-input-placeholder {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #878787;
 }
 
 body :-ms-input-placeholder {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #878787;
 }
 
 body ::-ms-input-placeholder {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #878787;
 }
 
 body ::placeholder {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #878787;
-}
-
-body nav .profile-section .darkmode:hover {
-  cursor: pointer;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
 body textarea {
@@ -43,7 +35,7 @@ body textarea {
   height: 14em;
   outline: none;
   padding: 1em;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body nav {
@@ -159,7 +151,6 @@ body nav .profile-section .profile-container {
           justify-content: center;
 }
 
-
 body form {
   background: #ffffff;
   border-radius: 20px;
@@ -220,7 +211,7 @@ body form input {
   border-radius: 15px;
   padding: 0.8em;
   width: 18em;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   border: 1px solid #C4C4C4;
 }
 
@@ -249,7 +240,7 @@ body .message {
           transform: translate(-50%, -50%);
 }
 
-body .footer .copy {
+footer .copy {
   text-align: center;
   padding: 1.5rem;
   margin-top: 1.5rem;
@@ -260,7 +251,7 @@ body .footer .copy {
   padding-bottom: 9rem;
 }
 
-body .footer .copy span {
+footer .copy span {
   color: #00B4DB;
 }
 

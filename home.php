@@ -51,7 +51,7 @@ if ($email != false && $password != false) {
                     <img src="/images/moon.png" alt="" class="darkmode">
             <div class="profile-container">
                 <img src="/images/prof.png" alt="" class="profile">
-                <img src="/images/dropdown.png" alt="" class="dropdown">
+                <img src="/images/dropdown.png" alt= "" class="dropdown">
             </div>
             </div>
         </nav>
@@ -61,13 +61,14 @@ if ($email != false && $password != false) {
           <main>
 
                     <!-- Insert codes for every page here-->
+                        
 
           </main>
 
           <section class="footer">
           
                     <div class="copy"> Copyright&copy;2022 All rights reserved.
-                              <span>Bitty</span>
+                              <span>Bitty</span>p
                     </div>
           
           </section>

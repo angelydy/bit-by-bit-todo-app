@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -149,7 +150,11 @@ body nav .profile-section .profile-container {
           justify-content: center;
 }
 
-
+.user-greetings {
+	font-size: 1.5em;
+	color: #00B4DB;
+	text-align: center;
+}
 		</style>
 	</head>
 <body>
@@ -178,6 +183,10 @@ body nav .profile-section .profile-container {
       </div>
     </div>
   </nav>
+	<div class="user-greetings">
+		<h1 class="greeting"></h1>
+		<h2>What do you want to do today?</h2>
+	</div>
 	<div class="col-md-3"></div>
 	<div class="col-md-6 well">
 		<hr style="border-top:1px dotted #ccc;"/>

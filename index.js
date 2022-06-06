@@ -52,3 +52,15 @@ function submitForm() {
   }
 }
 submit.addEventListener("click", submitForm);
+
+var greeting = document.getElementById(".greeting");
+var hour = new Date().getHours();
+if (hour < 12) {
+  greeting.innerHTML = "Good Morning!";
+}
+else if (hour < 18) {
+  greeting.innerHTML = "Good Afternoon!";
+}
+else {
+  greeting.innerHTML = "Good Evening!";
+}
