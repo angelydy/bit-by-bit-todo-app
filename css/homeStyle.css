@@ -155,7 +155,7 @@ section{
     line-height: 80px;
 }
 .obj-text p{
-    color: black;
+    color: var(--dark-one);
     font-size: 20px;
     margin: 20px auto;
 }

@@ -13,6 +13,7 @@ function displayFiveSec() {
 displayFiveSec();
 
 var darkModeBtn = document.querySelector(".darkmode");
+var blacks = document.getElementById("white-text")
 function darkMode() {
   //create darkmode and store in local storage
   if (localStorage.getItem("darkmode") === null) {
@@ -20,12 +21,14 @@ function darkMode() {
   }
   //check if darkmode is enabled
   if (localStorage.getItem("darkmode") == "enabled") {
-    document.body.style.backgroundColor = "#00111D";
+    document.body.style.backgroundColor = "#F3FAFF";
+    blacks.style.color = "black";
     localStorage.setItem("darkmode", "disabled");
   }
   //check if darkmode is disabled
   else if (localStorage.getItem("darkmode") == "disabled") {
-    document.body.style.backgroundColor = "#F3FAFF";
+    document.body.style.backgroundColor = "#00111D";
+    blacks.style.color = "#83CBFF";
     localStorage.setItem("darkmode", "enabled");
   }
 }
