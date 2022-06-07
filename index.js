@@ -1,32 +1,13 @@
-
 var darkModeBtn = document.querySelector(".darkmode");
 var blacks = document.getElementById("white-text")
-var element = document.body;
-let darkMode = localStorage.getItem("dark-mode");
-
-const enableDarkMode = () => {
-  element.classList.add("dark-mode");
+var footer = document.querySelector(".copy");
+function darkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
   blacks.style.color = "#83CBFF";
-  localStorage.setItem("dark-mode", "enabled");
-};
-
-const disableDarkMode = () => {
-  element.classList.remove("dark-mode");
-  localStorage.setItem("dark-mode", "disabled");
-};
-
-if (darkMode === "enabled") {
-  enableDarkMode(); // set state of darkMode on page load
+  footer.style.color = "#83CBFF";
 }
-
-darkModeBtn.addEventListener("click", (e) => {
-  darkMode = localStorage.getItem("dark-mode"); // update darkMode when clicked
-  if (darkMode === "disabled") {
-    enableDarkMode();
-  } else {
-    disableDarkMode();
-  }
-});
+darkModeBtn.addEventListener("click", darkMode)
 
 var time = document.getElementById("time");
 function displayFiveSec() {
@@ -75,3 +56,4 @@ function submitForm() {
   }
 }
 submit.addEventListener("click", submitForm);
+
