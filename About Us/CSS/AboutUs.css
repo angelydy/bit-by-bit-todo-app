@@ -7,7 +7,10 @@
 }
 
 body {
-    height: 100vh;
+}
+
+.dark-mode {
+  background: #00111D;
 }
 
 body nav .profile-section .darkmode:hover {
@@ -53,9 +56,11 @@ body nav {
     width: 4em;
   }
   
-  body nav .logo p {
+ body nav .logo p {
     font-size: 1.5em;
     color: #48B2FE;
+    font-style: italic;
+    font-weight: 600;
   }
   
   body nav ul {

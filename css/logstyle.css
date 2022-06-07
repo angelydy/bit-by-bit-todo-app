@@ -6,6 +6,11 @@
     text-decoration: none;
     transition: .2s linear;
 }
+
+.dark-mode {
+  background: #00111D;
+}
+
 body {
   	font-family: 'Poppins', sans-serif;
     color: #333;
@@ -43,12 +48,13 @@ nav {
         width: 4em;
       }
 
-      nav .logo p{
-        font-size: 1.5em;
-            font-weight: 600;
-            color: #48B2FE;
-            font-style: italic;
-      }
+       body nav .logo p {
+    font-size: 1.5em;
+    color: #48B2FE;
+    font-style: italic;
+    font-weight: 600;
+         margin: 0;
+  }
 
     	nav ul {
       	list-style: none;

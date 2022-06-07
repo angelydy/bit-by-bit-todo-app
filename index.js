@@ -56,4 +56,3 @@ function submitForm() {
   }
 }
 submit.addEventListener("click", submitForm);
-

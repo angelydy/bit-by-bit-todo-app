@@ -1,11 +1,9 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<link rel="stylesheet" href="css/bootstrap.css"/>
 		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="shortcut icon" href="/"/>
+    <link rel="shortcut icon" href="/images/b3logo.png">
     <script src="/index.js" defer></script>
     <title>ToDo</title>
 		<style>
@@ -14,6 +12,17 @@
 				background: #F3FAFF;
               	font-family: "Poppins", sans-serif;
 			}
+          
+          .user-greetings {
+	font-size: 1.5em;
+	color: #00B4DB;
+	text-align: center;
+            margin-top: 2em;
+}
+          
+          .dark-mode {
+  background: #00111D;
+}
 			
 			.col-md-6{
 				background: #83CBFF;
@@ -57,11 +66,13 @@
         width: 4em;
       }
 
-      nav .logo p{
-        margin: 0;
-        font-size: 1.5em;
-        color: #48B2FE;
-      }
+       body nav .logo p {
+    font-size: 1.5em;
+    color: #48B2FE;
+    font-style: italic;
+    font-weight: 600;
+         margin: 0;
+  }
 
     	nav ul {
       	list-style: none;
@@ -150,11 +161,7 @@ body nav .profile-section .profile-container {
           justify-content: center;
 }
 
-.user-greetings {
-	font-size: 1.5em;
-	color: #00B4DB;
-	text-align: center;
-}
+
 		</style>
 	</head>
 <body>
@@ -165,7 +172,7 @@ body nav .profile-section .profile-container {
     </div>
 
     <ul>
-      <li>home</li>
+      <li><a href="/index.html">home</a></li>
       <li class="active"><a href="/todo.php"><u>tasks</u></a></li>
       <li><a href="/About Us/HTML/AboutUs.html">about</a></li>
       <li><a href="/contact.html">contact</a></li>
@@ -183,9 +190,9 @@ body nav .profile-section .profile-container {
       </div>
     </div>
   </nav>
-	<div class="user-greetings">
-		<h1 class="greeting"></h1>
-		<h2>What do you want to do today?</h2>
+  	<div class="user-greetings">
+		<h1 id="greeting"></h1>
+		<h3>What do you want to do today?</h3>
 	</div>
 	<div class="col-md-3"></div>
 	<div class="col-md-6 well">

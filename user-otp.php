@@ -25,7 +25,7 @@ if ($email == false) {
             </div>
 
             <ul>
-            <li>home</li>
+            <li><a href="/index.html">home</a></li>
             <li><a href="/todo.php">tasks</a></li>
             <li><a href="/About Us/HTML/AboutUs.html">about</a></li>
             <li><a href="/contact.html"><u>contact</u></a></li>

@@ -1,28 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #333;
   background: #F3FAFF;
 }
 
+.dark-mode {
+  background: #00111D;
+}
+
 body ::-webkit-input-placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #878787;
 }
 
 body :-ms-input-placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #878787;
 }
 
 body ::-ms-input-placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #878787;
 }
 
 body ::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #878787;
+}
+
+body nav .profile-section .darkmode:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 body textarea {
@@ -35,7 +47,7 @@ body textarea {
   height: 14em;
   outline: none;
   padding: 1em;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body nav {
@@ -73,12 +85,12 @@ body nav .logo img {
   width: 4em;
 }
 
-body nav .logo p {
-  font-size: 1.5em;
-    font-weight: 600;
+ body nav .logo p {
+    font-size: 1.5em;
     color: #48B2FE;
     font-style: italic;
-}
+    font-weight: 600;
+  }
 
 body nav ul {
   list-style: none;
@@ -153,6 +165,7 @@ body nav .profile-section .profile-container {
           justify-content: center;
 }
 
+
 body form {
   background: #ffffff;
   border-radius: 20px;
@@ -213,7 +226,7 @@ body form input {
   border-radius: 15px;
   padding: 0.8em;
   width: 18em;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   border: 1px solid #C4C4C4;
 }
 
@@ -242,7 +255,7 @@ body .message {
           transform: translate(-50%, -50%);
 }
 
-footer .copy {
+body .footer .copy {
   text-align: center;
   padding: 1.5rem;
   margin-top: 1.5rem;
@@ -253,7 +266,7 @@ footer .copy {
   padding-bottom: 9rem;
 }
 
-footer .copy span {
+body .footer .copy span {
   color: #00B4DB;
 }
 

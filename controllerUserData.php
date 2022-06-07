@@ -87,7 +87,7 @@ if (isset($_POST['login'])) {
             if ($status == 'verified') {
                 $_SESSION['email'] = $email;
                 $_SESSION['password'] = $password;
-                header('location: home.php'); //homepage
+                header('location: index.html'); //homepage
             } else {
                 $info = "It's look like you haven't still verify your email - $email";
                 $_SESSION['info'] = $info;

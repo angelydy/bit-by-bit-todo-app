@@ -26,6 +26,10 @@ body{
     color: var(--dark-one);
 }
 
+.dark-mode {
+  background: #00111D;
+}
+
 /*INSERT NAV BAR CSS CODE */
 
 section{
@@ -33,7 +37,6 @@ section{
 }
 .home{
     width: 100%;
-    min-height: 90vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
@@ -62,7 +65,6 @@ section{
     display: block;
     width: 100px;
     text-decoration: none;
-    font-weight: 600;
     text-align: center;
     color: #ffff;
     background:  #76E0EA;;
@@ -76,8 +78,6 @@ section{
     transform: scale(1.2) translateY(10px);
     transition: .4s;
 }
-
-
 
 /* FEATURES START*/
 .features{
@@ -236,11 +236,11 @@ section{
     transition: .4s;
 }
 .col ul li a:hover{
-    color: var(--dark-two);
+    color: black;
     transform: translateX(-12px);
 }
 .col .social{
-    width: 150px;
+    width: 220px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -275,6 +275,7 @@ body nav {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     position: relative;
+  padding: 1.3em;
   }
   
   body nav a {
@@ -300,9 +301,9 @@ body nav {
   
   body nav .logo p {
     font-size: 1.5em;
-    font-weight: 600;
     color: #48B2FE;
     font-style: italic;
+    font-weight: 600;
   }
   
   body nav ul {
@@ -378,23 +379,15 @@ body nav {
             justify-content: center;
   }
 
-body nav .log-button .login-btn {
-    border: none;
-    display: block;
-    width: 60px;
-    height: 30px;
-    text-decoration: none;
-    text-align: center;
-    color: #ffff;
-    background: #8c8aff;
-    font-size: 10px;
-    padding: 7px;
-    border-radius: 30px;
-    margin: 25px 0;
-    transition: var(--transition);
+body nav .profile-section .darkmode:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-footer .copy {
+.footer .copy {
     text-align: center;
     padding: 1.5rem;
     margin-top: 1.5rem;
@@ -405,12 +398,9 @@ footer .copy {
     padding-bottom: 9rem;
 }
 
-footer .copy span {
+.footer .copy span {
     color: #00B4DB;
 }
-
-
-
 
 @media (max-width:1560px){
     header{
