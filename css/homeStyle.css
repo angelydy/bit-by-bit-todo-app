@@ -62,6 +62,7 @@ section{
     display: block;
     width: 100px;
     text-decoration: none;
+    font-weight: 600;
     text-align: center;
     color: #ffff;
     background:  #76E0EA;;
@@ -75,6 +76,8 @@ section{
     transform: scale(1.2) translateY(10px);
     transition: .4s;
 }
+
+
 
 /* FEATURES START*/
 .features{
@@ -233,11 +236,11 @@ section{
     transition: .4s;
 }
 .col ul li a:hover{
-    color: black;
+    color: var(--dark-two);
     transform: translateX(-12px);
 }
 .col .social{
-    width: 220px;
+    width: 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -297,7 +300,9 @@ body nav {
   
   body nav .logo p {
     font-size: 1.5em;
+    font-weight: 600;
     color: #48B2FE;
+    font-style: italic;
   }
   
   body nav ul {
@@ -372,6 +377,39 @@ body nav {
         -ms-flex-pack: center;
             justify-content: center;
   }
+
+body nav .log-button .login-btn {
+    border: none;
+    display: block;
+    width: 60px;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffff;
+    background: #8c8aff;
+    font-size: 10px;
+    padding: 7px;
+    border-radius: 30px;
+    margin: 25px 0;
+    transition: var(--transition);
+}
+
+footer .copy {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 1.5 1.1 5%;
+    color: #333;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 9rem;
+}
+
+footer .copy span {
+    color: #00B4DB;
+}
+
+
 
 
 @media (max-width:1560px){

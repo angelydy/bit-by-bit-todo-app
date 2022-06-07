@@ -93,7 +93,7 @@
                               <span>Bitty</span>
                     </div>
           
-          </section>
+        </section>
                         
 
 </body>

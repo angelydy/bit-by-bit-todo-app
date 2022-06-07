@@ -30,7 +30,7 @@ if ($email != false && $password != false) {
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
           <link rel="stylesheet"
                     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css<?php echo time(); ?>">
-          <link rel="stylesheet" href="css/logstyle.css?v=<?php echo time(); ?>">
+          <link rel="stylesheet" href="css/homeStyle.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -39,31 +39,27 @@ if ($email != false && $password != false) {
             <img src="/images/B.png" alt="" class="logo">
             <p>itty</p>
             </div>
-
+        
             <ul>
-            <li>home</li>
+            <li class="active"><a href="/index.html">home</a></li>
             <li><a href="/todo.php">tasks</a></li>
-            <li>about</li>
-            <li class="active"><a href="/contact.html"><u>contact</u></a></li>
+            <li><a href="/About Us/HTML/AboutUs.html">about</a></li>
+            <li><a href="/contact.html"><u>contact</u></a></li>
             </ul>
-
+        
             <div class="profile-section">
                     <img src="/images/moon.png" alt="" class="darkmode">
-            <div class="profile-container">
-                <img src="/images/prof.png" alt="" class="profile">
-                <img src="/images/dropdown.png" alt= "" class="dropdown">
+                    <a href="/login-user.php" class="logout-btn">Logout</a>
             </div>
             </div>
         </nav>
 
-          <header></header>
-
-          <main>
+        <main>
 
                     <!-- Insert codes for every page here-->
                         
 
-          </main>
+        </main>
 
           <section class="footer">
           

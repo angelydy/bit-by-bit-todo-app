@@ -75,7 +75,9 @@ body nav .logo img {
 
 body nav .logo p {
   font-size: 1.5em;
-  color: #48B2FE;
+    font-weight: 600;
+    color: #48B2FE;
+    font-style: italic;
 }
 
 body nav ul {
